@@ -63,6 +63,7 @@ def print_results(results_dic, results_stats_dic, model,
     IS_DOG = 3
     IS_CLASSIFIER_DOG = 4
 
+    print()
     print("Model used: {}".format(model))
 
     if print_incorrect_dogs and (
