@@ -70,4 +70,5 @@ def classify_images(images_dir, results_dic, model) -> None:
         data.extend([classifier_label, int(pet_label in classified)])
         # I could use `int(pet_label in classifier_label)` but it would be wrong.
         # For example when classifier_label="norwegian elkhound" and pet_label="elkhound"
+        # or oystercatcher and cat, etc.
 
