@@ -54,9 +54,12 @@ def calculates_results_stats(results_dic):
         results_stats_dic["n_correct_breed"] += data[IS_DOG] and data[IS_MATCH]
 
     results_stats_dic["pct_match"] = get_pct(results_stats_dic["n_match"], results_stats_dic["n_images"])
-    results_stats_dic["pct_correct_dogs"] = get_pct(results_stats_dic["n_correct_dogs"], results_stats_dic["n_dogs_img"])
-    results_stats_dic["pct_correct_breed"] = get_pct(results_stats_dic["n_correct_breed"], results_stats_dic["n_dogs_img"])
-    results_stats_dic["pct_correct_notdogs"] = get_pct(results_stats_dic["n_correct_notdogs"], results_stats_dic["n_notdogs_img"])
+    results_stats_dic["pct_correct_dogs"] = get_pct(results_stats_dic["n_correct_dogs"],
+                                                    results_stats_dic["n_dogs_img"])
+    results_stats_dic["pct_correct_breed"] = get_pct(results_stats_dic["n_correct_breed"],
+                                                     results_stats_dic["n_dogs_img"])
+    results_stats_dic["pct_correct_notdogs"] = get_pct(results_stats_dic["n_correct_notdogs"],
+                                                       results_stats_dic["n_notdogs_img"])
 
     return results_stats_dic
 

@@ -29,7 +29,3 @@ def get_pet_labels(image_dir):
             results_dic[file] = [pet_label]
 
     return results_dic
-
-
-
-

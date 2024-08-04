@@ -1,11 +1,12 @@
 # provided by Udacity
 
 import ast
-from PIL import Image
-import torchvision.transforms as transforms
-from torch.autograd import Variable
+
 import torchvision.models as models
+import torchvision.transforms as transforms
+from PIL import Image
 from torch import __version__
+from torch.autograd import Variable
 
 resnet18 = models.resnet18(weights=True)
 alexnet = models.alexnet(weights=True)

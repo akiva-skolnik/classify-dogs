@@ -1,14 +1,13 @@
 from time import time
 
-# Imports print functions that check the lab
-from print_functions_for_lab_checks import *
-
+from adjust_results4_isadog import adjust_results4_isadog
+from calculates_results_stats import calculates_results_stats
+from classify_images import classify_images
 # Imports functions created for this program
 from get_input_args import get_input_args
 from get_pet_labels import get_pet_labels
-from classify_images import classify_images
-from adjust_results4_isadog import adjust_results4_isadog
-from calculates_results_stats import calculates_results_stats
+# Imports print functions that check the lab
+from print_functions_for_lab_checks import *
 from print_results import print_results
 
 
@@ -62,7 +61,7 @@ def main():
 
     end_time = time()
 
-    tot_time = end_time - start_time # Calculate difference between end time and start time
+    tot_time = end_time - start_time  # Calculate difference between end time and start time
     print("\n** Total Elapsed Runtime:",
           str(int((tot_time / 3600))) + ":" + str(int((tot_time % 3600) / 60)) + ":"
           + str(int((tot_time % 3600) % 60)))

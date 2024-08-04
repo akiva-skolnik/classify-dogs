@@ -1,5 +1,6 @@
-from classifier import classifier
 import os
+
+from classifier import classifier
 
 
 def classify_images(images_dir, results_dic, model) -> None:
@@ -48,4 +49,3 @@ def classify_images(images_dir, results_dic, model) -> None:
         # I could use `int(pet_label in classifier_label)` but it would be wrong.
         # For example when classifier_label="norwegian elkhound" and pet_label="elkhound"
         # or oystercatcher and cat, etc.
-

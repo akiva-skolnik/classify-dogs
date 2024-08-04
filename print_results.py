@@ -39,7 +39,8 @@ def print_results(results_dic, results_stats_dic, model,
     print("Model used: {}".format(model))
 
     if print_incorrect_dogs and (
-            results_stats_dic["n_correct_dogs"] + results_stats_dic["n_correct_notdogs"] != results_stats_dic["n_images"]):
+            results_stats_dic["n_correct_dogs"] + results_stats_dic["n_correct_notdogs"] != results_stats_dic[
+        "n_images"]):
         print()
         print("Incorrectly classified dogs:")
         for value in results_dic.values():
@@ -61,5 +62,3 @@ def print_results(results_dic, results_stats_dic, model,
     print("Percentage of correctly classified dogs: {}".format(results_stats_dic["pct_correct_dogs"]))
     print("Percentage of correctly classified dog breeds: {}".format(results_stats_dic["pct_correct_breed"]))
     print("Percentage of correctly classified not-dogs: {}".format(results_stats_dic["pct_correct_notdogs"]))
-
-
